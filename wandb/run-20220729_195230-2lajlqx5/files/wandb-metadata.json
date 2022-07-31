@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.13.0-7614-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-07-29T16:52:32.099355",
+    "startedAt": "2022-07-29T16:52:30.889049",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/sercanamac/monolith/research_starter_kit/src/train.py",
+    "codePath": "src/train.py",
+    "host": "pop-os",
+    "username": "sercanamac",
+    "executable": "/home/sercanamac/miniconda3/envs/research_env/bin/python"
+}

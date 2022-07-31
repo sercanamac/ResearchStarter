@@ -1,0 +1,3 @@
+defaults:
+  - model: base_model
+  - data: base_data

@@ -1,0 +1,37 @@
+model_checkpoint:
+  dirpath: checkpoints
+  filename: simple_model
+  save_top_k: 1
+  monitor: "val_loss"
+  save_last: False
+  verbose: True
+  mode: min
+trainer:
+  max_epochs: 100
+  accelerator: "gpu"
+  devices: 1
+  benchmark: True
+  fast_dev_run: False
+  limit_train_batches: 1.0
+  limit_val_batches: 1.0
+  profiler: null
+  deterministic: False
+  accumulate_grad_batches: 1
+  amp_backend: "native"
+  check_val_every_n_epoch: 1
+  gradient_clip_val: 0.0
+  strategy: null
+  overfit_batches: 0.0
+  precision: 32
+  reload_dataloaders_every_n_epochs: 0
+  sync_batchnorm: False
+  track_grad_norm: 2
+  val_check_interval: 1.0
+logger:
+  name: "base_exp"
+  project: "FSS"
+ckpt_path: null
+model_loc: "mock_model"
+model_args: 
+  learning_rate: 0.0001
+  optimizer: "adam"
